@@ -7,11 +7,15 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="MediatR" Version="12.2.0" />
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="11.1.0" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
+    <ProjectReference Include="..\..\Core\MultiShop.Order.Application\MultiShop.Order.Application.csproj" />
+    <ProjectReference Include="..\..\Core\MultiShop.Order.Domain\MultiShop.Order.Domain.csproj" />
+    <ProjectReference Include="..\..\Infrastructure\MultiShop.Order.Persistence\MultiShop.Order.Persistence.csproj" />
   </ItemGroup>
 
 </Project>
