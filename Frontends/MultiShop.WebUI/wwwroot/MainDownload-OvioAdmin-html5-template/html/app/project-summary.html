@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+<title>Ovio -  Bootstrap Based Responsive Dashboard &amp; Admin Template</title>
+
+<!-- Bootstrap -->
+<link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+
+<!-- Template style -->
+<link rel="stylesheet" href="../dist/css/style.css">
+<link rel="stylesheet" href="et-line-font/et-line-font.css">
+<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+<link type="text/css" rel="stylesheet" href="../dist/weather/weather-icons.min.css">
+<link type="text/css" rel="stylesheet" href="../dist/weather/weather-icons-wind.min.css">
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+<script src="../plugins/charts/code/highcharts.js"></script>
+</head>
+
+<body class="sidebar-mini">
+<div class="wrapper"> 
+  
+  <!-- Main Header -->
+  <header class="main-header dark-bg"> 
+    
+    <!-- Logo --> 
+    <a href="../index.html" class="logo dark-bg"> 
+    <!-- mini logo for sidebar mini 50x50 pixels --> 
+    <span class="logo-mini"><img src="../dist/img/logo.png" alt="Ovio"></span> 
+    <!-- logo for regular state and mobile devices --> 
+    <span class="logo-lg"><img src="../dist/img/logo-lg.png" alt="Ovio"></span> </a> 
+    
+    <!-- Header Navbar -->
+    <nav class="navbar navbar-static-top" role="navigation"> 
+      <!-- Sidebar toggle button--> 
+      <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button"> <span class="sr-only">Toggle navigation</span> </a>
+      <div class="pull-left search-box">
+        <form action="#" method="get" class="search-form">
+          <div class="input-group">
+            <input type="text" name="search" class="form-control" placeholder="Search...">
+            <span class="input-group-btn">
+            <button type="submit" name="search" id="search-btn" class="btn btn-flat"><i class="fa fa-search"></i> </button>
+            </span></div>
+        </form>
+        <!-- search form --> </div>
+      <!-- Navbar Right Menu -->
+      <div class="navbar-custom-menu">
+        <ul class="nav navbar-nav">
+          <li class="dropdown messages-menu"> <a href="#" class="dropdown-toggle" data-toggle="dropdown"> <i class="icon-envelope"></i>
+            <div class="notify"> <span class="heartbit"></span> <span class="point"></span> </div>
+            </a>
+            <ul class="dropdown-menu">
+              <li class="header">You have 4 messages</li>
+              <li>
+                <ul class="menu">
+                  <li><a href="#">
+                    <div class="pull-left"><img src="../dist/img/img1.jpg" class="img-circle" alt="User Image"></div>
+                    <h4>Florence Douglas</h4>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                    <p><small><i class="fa fa-clock-o"></i> 2 mins</small></p>
+                    </a></li>
+                  <li><a href="#">
+                    <div class="pull-left"><img src="../dist/img/img2.jpg" class="img-circle" alt="User Image"></div>
+                    <h4>Douglas Smith</h4>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                    <p><small><i class="fa fa-clock-o"></i> 15 mins</small></p>
+                    </a></li>
+                  <li><a href="#">
+                    <div class="pull-left"><img src="../dist/img/img3.jpg" class="img-circle" alt="User Image"></div>
+                    <h4>Lorence Deo</h4>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                    <p><small><i class="fa fa-clock-o"></i> 35 mins</small></p>
+                    </a></li>
+                  <li><a href="#">
+                    <div class="pull-left"><img src="../dist/img/img1.jpg" class="img-circle" alt="User Image"></div>
+                    <h4>Florence Douglas</h4>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                    <p><small><i class="fa fa-clock-o"></i> 2 mins</small></p>
+                    </a></li>
+                </ul>
+              </li>
+              <li class="footer"><a href="#">Check all notifications</a></li>
+            </ul>
+          </li>
+          <!-- messages-menu --> 
+          
+          <!-- Notifications Menu -->
+          <li class="dropdown notifications-menu"> <a href="#" class="dropdown-toggle" data-toggle="dropdown"> <i class="icon-megaphone"></i>
+            <div class="notify"> <span class="heartbit"></span> <span class="point"></span> </div>
+            </a>
+            <ul class="dropdown-menu">
+              <li class="header">Notifications</li>
+              <li>
+                <ul class="menu">
+                  <li><a href="#"><i class="icon-lightbulb"></i> Lorem ipsum dolor sit amet </a> </li>
+                  <li><a href="#"><i class="icon-map-pin blue"></i> Lorem ipsum dolor sit amet </a> </li>
+                  <li><a href="#"><i class="icon-refresh orange"></i> Lorem ipsum dolor sit amet </a> </li>
+                  <li><a href="#"><i class="icon-map-pin blue"></i> Lorem ipsum dolor sit amet </a> </li>
+                </ul>
+              </li>
+              <li class="footer"><a href="#">View all</a></li>
+            </ul>
+          </li>
+          <!-- Tasks Menu --> 
+          <!-- User Account Menu -->
+          <li class="dropdown user user-menu"> <a href="#" class="dropdown-toggle" data-toggle="dropdown"> <img src="../dist/img/img1.jpg" class="user-image" alt="User Image"> <span class="hidden-xs">Florence Douglas</span> </a>
+            <ul class="dropdown-menu">
+              <li class="user-header">
+                <div class="pull-left user-img"><img src="../dist/img/img1.jpg" class="img-responsive" alt="User"></div>
+                <p class="text-left">Florence Douglas <small>florence@gmail.com</small> </p>
+                <div class="view-link text-left"><a href="#">View Profile</a> </div>
+              </li>
+              <li><a href="#"><i class="icon-profile-male"></i> My Profile</a></li>
+              <li><a href="#"><i class="icon-wallet"></i> My Balance</a></li>
+              <li><a href="#"><i class="icon-envelope"></i> Inbox</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#"><i class="icon-gears"></i> Account Setting</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#"><i class="fa fa-power-off"></i> Logout</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <!-- Left side column. contains the logo and sidebar -->
+  <aside class="main-sidebar dark-bg">
+    <section class="sidebar">
+      <div class="user-panel black-bg">
+        <div class="pull-left image"> <img src="../dist/img/img1.jpg" class="img-circle" alt="User Image"> </div>
+        <div class="pull-left info">
+          <p>Florence Douglas</p>
+          <a href="#"><i class="fa fa-circle"></i> Online</a> </div>
+      </div>
+      <!-- Sidebar Menu -->
+      <ul class="sidebar-menu" data-widget="tree">
+        <li class="header dark-bg">Menu</li>
+        <li class="treeview"><a href="#"><i class="fa fa-dashboard"></i> <span>Dashboard</span> <span class="pull-right-container"> <i class="fa fa-angle-left pull-right"></i> </span> </a>
+          <ul class="treeview-menu">
+            <li><a href="../index.html"><i class="fa fa-angle-right"></i> Dashboard 1</a></li>
+            <li><a href="../dashboard-2.html"><i class="fa fa-angle-right"></i> Dashboard 2</a></li>
+            <li><a href="../dashboard-3.html"><i class="fa fa-angle-right"></i> Dashboard 3</a></li>
+          </ul>
+        </li>
+        <li class="treeview"> <a href="#"><i class="fa fa-desktop"></i> <span>Templates</span> <span class="pull-right-container"> <i class="fa fa-angle-left pull-right"></i> </span> </a>
+          <ul class="treeview-menu">
+            <li><a href="../index.html"><i class="fa fa-angle-right"></i> Default</a></li>
+            <li><a href="../index-light.html"><i class="fa fa-angle-right"></i> Light</a></li>
+            <li><a href="../index-dark.html"><i class="fa fa-angle-right"></i> Dark</a></li>
+            <li><a href="../index-collapsed-sidebar.html"><i class="fa fa-angle-right"></i> Collapsed Sidebar</a></li>
+            <li><a href="../index-boxed.html"><i class="fa fa-angle-right"></i> Boxed</a></li>
+            <li><a href="../index-top-nav.html"><i class="fa fa-angle-right"></i> Top Navigation</a></li>
+            <li><a href="../index-rtl.html"><i class="fa fa-angle-right"></i> RTL</a></li>
+          </ul>
+        </li>
+        <li class="treeview active"> <a href="#"><i class="fa fa-bullseye"></i> <span>Apps</span> <span class="pull-right-container"> <i class="fa fa-angle-left pull-right"></i> </span> </a>
+          <ul class="treeview-menu">
+            <li class="active"><a href="project-summary.html"><i class="fa fa-angle-right"></i> Project Summary</a></li>
+            <li><a href="invoice.html"><i class="fa fa-angle-right"></i> Invoice</a></li>
+            <li><a href="calendar.html"><i class="fa fa-angle-right"></i> Calendar</a></li>
+            
+            <li><a href="gallery.html"><i class="fa fa-angle-right"></i> Gallery</a></li>
+            <li><a href="timeline.html"><i class="fa fa-angle-right"></i> Timeline</a></li>
+            <li><a href="contacts.html"><i class="fa fa-angle-right"></i> Contacts</a></li>
+            
+          </ul>
+        </li>
+        <li> <a href="../widgets.html"> <i class="fa fa-th"></i> <span>Widgets</span></a> </li>
+        <li class="header dark-bg">Components</li>
+        <li class="treeview"> <a href="#"><i class="fa fa-briefcase"></i> <span>UI Components</span> <span class="pull-right-container"> <i class="fa fa-angle-left pull-right"></i> </span> </a>
+          <ul class="treeview-menu">
+            <li><a href="../component/alerts.html"><i class="fa fa-angle-right"></i> Alerts</a></li>
+            <li><a href="../component/buttons.html"><i class="fa fa-angle-right"></i> Buttons</a></li>
+            <li><a href="../component/carousel.html"><i class="fa fa-angle-right"></i> Carousel</a></li>
+            <li><a href="../component/collapse.html"><i class="fa fa-angle-right"></i> Collapse</a></li>
+            <li><a href="../component/listgroup.html"><i class="fa fa-angle-right"></i> List Group</a></li>
+            <li><a href="../component/pagination.html"><i class="fa fa-angle-right"></i> Pagination</a></li>
+            <li><a href="../component/tabs.html"><i class="fa fa-angle-right"></i> Tabs</a></li>
+            <li><a href="../component/tooltips.html"><i class="fa fa-angle-right"></i> Tooltips</a></li>
+            <li><a href="../component/popovers.html"><i class="fa fa-angle-right"></i> Popovers</a></li>
+            <li><a href="../component/progress.html"><i class="fa fa-angle-right"></i> Progress</a></li>
+            <li><a href="../component/mediaobjects.html"><i class="fa fa-angle-right"></i> Media Objects</a></li>
+          </ul>
+        </li>
+        <li class="treeview"> <a href="#"><i class="fa fa-pencil-square-o"></i> <span>Forms</span> <span class="pull-right-container"> <i class="fa fa-angle-left pull-right"></i> </span> </a>
+          <ul class="treeview-menu">
+            <li><a href="../forms/general-elements.html"><i class="fa fa-angle-right"></i> General Elements</a></li>
+            <li><a href="../forms/layouts.html"><i class="fa fa-angle-right"></i> Form Layouts</a></li>
+            <li><a href="../forms/validation.html"><i class="fa fa-angle-right"></i> Form Validation</a></li>
+            <li><a href="../forms/wizard.html"><i class="fa fa-angle-right"></i> Form Wizard</a></li>
+            
+          </ul>
+        </li>
+        <li class="treeview"> <a href="#"><i class="fa fa-table"></i> <span>Tables</span> <span class="pull-right-container"> <i class="fa fa-angle-left pull-right"></i> </span> </a>
+          <ul class="treeview-menu">
+            <li><a href="../tables/basic.html"><i class="fa fa-angle-right"></i> Basic Tables</a></li>
+            <li><a href="../tables/data.html"><i class="fa fa-angle-right"></i> Data Tables</a></li>
+          </ul>
+        </li>
+        <li class="treeview"> <a href="#"><i class="fa fa-bar-chart"></i> <span>Charts</span> <span class="pull-right-container"> <i class="fa fa-angle-left pull-right"></i> </span> </a>
+          <ul class="treeview-menu">
+            <li><a href="../charts/line.html"><i class="fa fa-angle-right"></i> Line Charts</a></li>
+            <li><a href="../charts/area.html"><i class="fa fa-angle-right"></i> Area Charts</a></li>
+            <li><a href="../charts/bar.html"><i class="fa fa-angle-right"></i> Bar Charts</a></li>
+            <li><a href="../charts/pie.html"><i class="fa fa-angle-right"></i> Pie Charts</a></li>
+            <li><a href="../charts/bubble.html"><i class="fa fa-angle-right"></i> Bubble Charts</a></li>
+            <li><a href="../charts/combinations.html"><i class="fa fa-angle-right"></i> Combinations</a></li>
+            <li><a href="../charts/3d.html"><i class="fa fa-angle-right"></i> 3D Charts</a></li>
+            
+          </ul>
+        </li>
+        <li class="treeview"> <a href="#"><i class="fa fa-map-marker"></i> <span>Maps</span> <span class="pull-right-container"> <i class="fa fa-angle-left pull-right"></i> </span> </a>
+          <ul class="treeview-menu">
+            <li><a href="../maps/google-maps.html"><i class="fa fa-angle-right"></i> Google Maps</a></li>
+            <li><a href="../maps/vector-map.html"><i class="fa fa-angle-right"></i> Vector Map</a></li>
+          </ul>
+        </li>
+        <li class="treeview"> <a href="#"><i class="fa fa-files-o"></i> <span>Pages</span> <span class="pull-right-container"> <i class="fa fa-angle-left pull-right"></i> </span> </a>
+          <ul class="treeview-menu">
+            <li><a href="../pages/login.html"><i class="fa fa-angle-right"></i> Login</a></li>
+            <li><a href="../pages/register.html"><i class="fa fa-angle-right"></i> Register</a></li>
+            <li><a href="../pages/forgot-password.html"><i class="fa fa-angle-right"></i> Forgot password</a></li>
+            <li><a href="../pages/coming-soon.html"><i class="fa fa-angle-right"></i> Coming Soon</a></li>
+            
+          </ul>
+        </li>
+        <li class="treeview"> <a href="#"> <i class="fa fa-align-left"></i> <span>Multilevel</span> <span class="pull-right-container"> <i class="fa fa-angle-left pull-right"></i> </span> </a>
+          <ul class="treeview-menu" style="display: none;">
+            <li><a href="#"><i class="fa fa-angle-right"></i> Level One</a></li>
+            <li class="treeview"> <a href="#"><i class="fa fa-angle-right"></i> Level One <span class="pull-right-container"> <i class="fa fa-angle-left pull-right"></i> </span> </a>
+              <ul class="treeview-menu" style="display: none;">
+                <li><a href="#"><i class="fa fa-angle-right"></i> Level Two</a></li>
+                <li class="treeview"> <a href="#"><i class="fa fa-angle-right"></i> Level Two <span class="pull-right-container"> <i class="fa fa-angle-left pull-right"></i> </span> </a>
+                  <ul class="treeview-menu" style="display: none;">
+                    <li><a href="#"><i class="fa fa-angle-right"></i> Level Three</a></li>
+                    <li><a href="#"><i class="fa fa-angle-right"></i> Level Three</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li><a href="#"><i class="fa fa-angle-right"></i> Level One</a></li>
+          </ul>
+        </li>
+      </ul>
+      <!-- sidebar-menu --> 
+    </section>
+  </aside>
+  
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper"> 
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+      <h1>Project Summary</h1>
+      <ol class="breadcrumb">
+        <li><a href="#"><i class="fa fa-home"></i> Home</a></li>
+        <li class="active"><i class="fa fa-bullseye"></i> App</li>
+        <li class="active"><i class="fa fa-files-o"></i> Project Summary</li>
+      </ol>
+    </section>
+    
+    <!-- Main content -->
+    <section class="content container-fluid">
+      <div class="row">
+        <div class="col-lg-8">
+          <div class="chart-box">
+            <div class="head-title">
+              <h4>Mobile APP Development</h4>
+              <div class="title-element"> <span class="lable-tag tag-success">Mobile</span> <span class="lable-tag tag-unpaid">New</span> <span class="lable-tag tag-warning">Android</span> </div>
+              <p class="text-center m-top-2">Project Owner: John Deo | Start: 15/March/2017 | Due on: 15/Nov/2017</p>
+            </div>
+            <p class="m-bot-2">Lorem ipsum dolor sit amet, consectetur adip iscing elit. Nullam sagittis mattis arcu. Suspen disse potenti. Sed lectus est, commodo eu pre tium eu, pulvinar porttitor aliquam efficitur feugiat accumsan.</p>
+            <h4 class="m-bot-2">Project Status</h4>
+            <div class="row">
+              <div class="col-md-12 cusom-bars">
+                <div class="progress-info m-bot-1">Current Status <span class="pull-right">80%</span></div>
+                <div class="progress">
+                  <div class="progress-bar progress-bar-striped progress-bar-success active" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%"> <span class="sr-only">80% Complete</span> </div>
+                </div>
+              </div>
+              <div class="col-md-6 cusom-bars">
+                <div class="progress-info m-bot-1">To Do List <span class="pull-right">60%</span></div>
+                <div class="progress">
+                  <div class="progress-bar progress-bar-striped progress-bar-info active" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%"> <span class="sr-only">60% Complete</span> </div>
+                </div>
+                <div class="progress-info m-bot-1">Tasks <span class="pull-right">50%</span></div>
+                <div class="progress">
+                  <div class="progress-bar progress-bar-warning progress-bar-striped active" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:50%"><span class="sr-only">50% Complete</span></div>
+                </div>
+              </div>
+              <div class="col-md-6 cusom-bars">
+                <div class="progress-info m-bot-1">TaskLists <span class="pull-right">45%</span></div>
+                <div class="progress">
+                  <div class="progress-bar progress-bar-striped progress-bar-warning active" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 45%"> <span class="sr-only">45% Complete</span> </div>
+                </div>
+                <div class="progress-info m-bot-1">Bugs <span class="pull-right">65%</span></div>
+                <div class="progress">
+                  <div class="progress-bar progress-bar-danger progress-bar-striped active" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="width:65%"><span class="sr-only">65% Complete</span></div>
+                </div>
+              </div>
+            </div>
+            <h4 class="m-bot-2">Files</h4>
+            <div class="row m-bot-3">
+              <div class="col-md-1 col-xs-2"> <i class="font-40 fa fa-file-pdf-o"></i> </div>
+              <div class="col-md-7 col-xs-5">
+                <div class="no-padding no-margin">Project_wireframe.pdf<small class="display-block">14MB</small></div>
+              </div>
+              <div class="col-md-4 col-xs-5 text-right">
+                <button class="btn btn-default btn-xs"><i class="fa fa-eye"></i> View</button>
+                <button class="btn btn-default btn-xs"><i class="fa fa-download"></i> Download</button>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-1 col-xs-2"> <i class="font-40 fa fa-file-excel-o"></i> </div>
+              <div class="col-md-7 col-xs-5">
+                <div class="no-padding no-margin">Project_wireframe.xls<small class="display-block">14MB</small></div>
+              </div>
+              <div class="col-md-4 col-xs-5 text-right">
+                <button class="btn btn-default btn-xs"><i class="fa fa-eye"></i> View</button>
+                <button class="btn btn-default btn-xs"><i class="fa fa-download"></i> Download</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="chart-box">
+            <h4 class="m-bot-2">Project Overview
+              <button type="button" class="close pull-right" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            </h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adip iscing elit. Nullam sagittis mattis arcu. Suspen disse potenti. Sed lectus est, commodo eu pre tium eu, pulvinar porttitor <code>feugiat</code>. Aliquam efficitur feugiat accumsan. Nulla hendrerit cursus nisi nec mattis. Nullam ac orci accumsan, bibendum justo eu, blandit sem.</p>
+            <p>Suspen disse potenti. Sed lectus est, commodo eu pre tium eu, pulvinar porttitor <code>feugiat</code>. Aliquam efficitur feugiat accumsan. Nulla hendrerit cursus nisi nec mattis. Nullam ac orci accumsan, bibendum justo eu, commodo eu pre tium eu, pulvinar porttitor blandit sem.</p>
+            <h5 class="m-bot-1">Suspen disse potenti</h5>
+            <p class="text-success">Hendrerit cursus nisi nec mattis</p>
+            <p class="text-info">Aliquam efficitur feugiat accumsan</p>
+            <p class="text-warning">Lorem ipsum dolor sit amet</p>
+            <p class="text-danger">Nullam ac consectetur accumsan</p>
+            <p class="text-success">Hendrerit cursus nisi nec mattis</p>
+            <p class="text-info">Aliquam efficitur feugiat accumsan</p>
+            <p class="text-warning">Lorem ipsum dolor sit amet</p>
+            <p class="text-primary">Sed lectus est, commodo eu pre tium eu</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="chart-box">
+            <h4 class="m-bot-3">Task List</h4>
+            <div id="container3"></div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="chart-box">
+            <h4 class="m-bot-3">Recent Activities</h4>
+            <div class="sl-item sl-primary">
+              <div class="sl-content"><small class="text-muted"><i class="fa fa-user position-left"></i> 5 mins ago</small>
+                <p>Lorem Ipsum has been the printing and type setting sed eiusmod tempor incididunt printing and type setting sed eiusmod.</p>
+              </div>
+            </div>
+            <div class="sl-item sl-danger">
+              <div class="sl-content"><small class="text-muted"><i class="fa fa-user position-left"></i> 8 mins ago</small>
+                <p>Lorem Ipsum has been the printing and type setting sed eiusmod tempor incididunt printing and type setting sed eiusmod.</p>
+              </div>
+            </div>
+            <div class="sl-item sl-success">
+              <div class="sl-content"><small class="text-muted"><i class="fa fa-user position-left"></i> 10 mins ago</small>
+                <p>Lorem Ipsum has been the printing and type setting sed eiusmod tempor incididunt printing and type setting sed eiusmod.</p>
+              </div>
+            </div>
+            <div class="sl-item sl-warning">
+              <div class="sl-content"><small class="text-muted"><i class="fa fa-user position-left"></i> 12 mins ago</small>
+                <p>Lorem Ipsum has been the printing and type setting sed eiusmod tempor incididunt printing and type setting sed eiusmod.</p>
+              </div>
+            </div>
+            <div class="sl-item sl-success">
+              <div class="sl-content"><small class="text-muted"><i class="fa fa-user position-left"></i> 15 mins ago</small>
+                <p>Lorem Ipsum has been the printing and type setting sed eiusmod tempor incididunt printing and type setting sed eiusmod.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- content --> 
+  </div>
+  <!-- content-wrapper --> 
+  
+  <!-- Main Footer -->
+  <footer class="main-footer dark-bg">
+    <div class="pull-right hidden-xs"> Version 1.0</div>
+    Copyright &copy; 2017 Yourdomian. All rights reserved. </footer>
+</div>
+<!-- wrapper --> 
+
+<!-- jQuery --> 
+<script src="../dist/js/jquery.min.js"></script> 
+<script src="../bootstrap/js/bootstrap.min.js"></script> 
+<script src="../dist/js/ovio.js"></script> 
+
+<!-- charts --> 
+<script src="../plugins/charts/code/modules/exporting.js"></script> 
+<script type="text/javascript">
+(function($) {
+  "use strict";
+$(document).ready(function () {
+
+    // Build the chart
+    Highcharts.chart('container3', {
+        chart: {
+            plotBackgroundColor: null,
+            plotBorderWidth: null,
+            plotShadow: false,
+            type: 'pie'
+        },
+        title: {
+            text: 'Tasks'
+        },
+        tooltip: {
+            pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+        },
+        plotOptions: {
+            pie: {
+                allowPointSelect: true,
+                cursor: 'pointer',
+                dataLabels: {
+                    enabled: true
+                },
+                showInLegend: true
+            }
+        },
+        series: [{
+            name: 'Brands',
+            colorByPoint: true,
+            data: [{
+                name: 'Opened',
+                y: 56.33
+            }, {
+                name: 'Closed',
+                y: 24.03,
+                sliced: true,
+                selected: true
+            }, 
+			
+			
+			 {
+                
+            }]
+        }]
+    });
+});
+})(jQuery);
+</script>
+</body>
+</html>

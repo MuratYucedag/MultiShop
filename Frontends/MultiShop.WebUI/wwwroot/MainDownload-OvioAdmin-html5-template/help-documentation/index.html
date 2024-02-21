@@ -1,0 +1,259 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<head lang="en">
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<title>Template Documentation Template</title>
+	<!-- Framework CSS -->
+	<link rel="stylesheet" href="assets/blueprint-css/screen.css" type="text/css" media="screen, projection">
+	<link rel="stylesheet" href="assets/blueprint-css/print.css" type="text/css" media="print">
+	<!--[if lt IE 8]><link rel="stylesheet" href="assets/blueprint-css/ie.css" type="text/css" media="screen, projection"><![endif]-->
+	<link rel="stylesheet" href="assets/blueprint-css/plugins/fancy-type/screen.css" type="text/css" media="screen, projection">
+	<style type="text/css" media="screen">
+		p, table, hr, .box { margin-bottom:25px; }
+		.box p { margin-bottom:10px; }
+	</style>
+</head>
+
+
+<body>
+	<div class="container">
+	
+		<h3 class="center alt">&ldquo;Ovio&rdquo; Documentation by &ldquo;UXLiner&rdquo; v1.0</h3>
+		
+		<hr>
+		
+		<h1 class="center">&ldquo;Ovio&rdquo;</h1>
+		
+		<div class="borderTop">
+			<div class="span-6 colborder info prepend-1">
+				<p class="prepend-top">
+					<strong>
+					Created: 25/08/2017<br>
+					By: UXLiner<br>
+					Email: <a href="mailto:uxliner9@gmail.com">UXLiner</a>
+					<br>
+					<br><br><br><br><br>
+					</strong>
+				</p>
+			</div><!-- end div .span-6 -->		
+	
+			<div class="span-12 last">
+				<p class="prepend-top append-0"><strong>Hi! Thank you for purchasing my template.</strong><br>
+If you have any questions that are beyond the scope of this help file, please feel free to email via my user page contact form <a href="http://themeforest.net/user/UXLiner">here</a>. Thanks so much!<br><br>
+This file will teach you how to set up and use the “<span class="center">Ovio</span>” Theme. <br><br>
+
+Best regards,<br>
+<strong>UXLiner</strong></p>
+		  </div>
+		</div><!-- end div .borderTop -->
+		
+		<hr>
+		
+		<h2 id="toc" class="alt">Table of Contents</h2>
+		<ol class="alpha">
+			<li><a href="#introduction">Introduction</a></li>
+			<li><a href="#dependencies">Dependencies</a></li>
+			<li><a href="#layout">Layout</a></li>
+            <li><a href="#browsersupport">Browser Support</a></li>
+            
+            
+            
+            
+		  <li><a href="#credits">Sources and Credits</a></li>
+		</ol>
+		
+		<hr>
+		
+		<h3 id="introduction"><strong>A) Introduction</strong> - <a href="#toc">top</a></h3>
+		<p>Ovio – admin dashboards and control admin panels. It is a fully responsive HTML template, based on the CSS framework Bootstrap. Ovio comes with lots of ready to use widgets and components. It has a huge collection of reusable UI components and integrated with latest jQuery plugins. So simply download and starting bootstrapping your next big dashboard.
+		</p> 
+
+		<hr>
+
+		<h3 id="dependencies"><strong>B) Dependencies</strong> - <a href="#toc">top</a></h3>
+		<ul class="bring-up">
+          <li><a href="http://getbootstrap.com" target="_blank">Bootstrap 3</a></li>
+          <li><a href="http://jquery.com/" target="_blank">jQuery 1.11+</a></li>
+          <li><a href="#">All other plugins are listed below</a></li>
+        </ul>
+        
+      <div class="col-3"><h4><strong>Charts</strong></h4>
+        <ul>
+          <li>3d Charts</li>
+          <li>Area Charts</li>
+          <li>Bar Charts</li>
+          <li>Bubble Charts</li>
+          <li>Combinations Charts</li>
+          <li>Line Charts</li>
+          <li>Pie Charts</li>
+        </ul></div>
+      <div class="col-3"><h4><strong>Other</strong></h4>
+        <ul>
+          <li>Calendar</li>
+          <li>Countdown</li>
+          <li>Cubeportfolio</li>
+          <li>Maps</li>
+          <li>Stepform</li>
+          <li>Tables</li>
+        </ul></div>
+        
+		<hr>
+        
+		<h3 id="layout"><strong>C) Layout</strong> - <a href="#toc">top</a></h3>
+		<p>The layout consists of four major parts:</p>
+        
+      <ul>
+          <li><strong>Wrapper</strong> <code>.wrapper</code>. A div that wraps the whole site.</li>
+          <li><strong>Main Header</strong> <code>.main-header</code>. Contains the logo and navbar.</li>
+          <li><strong>Sidebar</strong> <code>.sidebar-wrapper</code>. Contains the user panel and sidebar menu.</li>
+          <li><strong>Content</strong> <code>.content-wrapper</code>. Contains the page header and content.</li>
+      </ul>
+        
+        <h3>Layout Options</h3>
+        <p class="lead">Ovio provides a set of options to apply to your main layout. Each one of these classes can be added
+          to the body tag to get the desired goal.</p>
+          <ul>
+          <li><b>Fixed:</b> use the class <code>.fixed</code> to get a fixed header and sidebar.</li>
+          <li><b>Collapsed Sidebar:</b> use the class <code>.sidebar-collapse</code> to have a collapsed sidebar upon loading.</li>
+          <li><b>Boxed Layout:</b> use the class <code>.layout-boxed</code> to get a boxed layout that stretches only to 1250px.</li>
+          <li><b>Top Navigation</b> use the class <code>.layout-top-nav</code> to remove the sidebar and have your links at the top navbar.</li>
+        </ul>
+        
+      <h3>Main Header Example</h3>
+
+	  <p>&lt;header class=&quot;main-header dark-bg&quot;&gt; <br>
+          <br>
+&lt;!-- Logo --&gt; <br>
+&lt;a href=&quot;index.html&quot; class=&quot;logo dark-bg&quot;&gt; <br>
+&lt;!-- mini logo for sidebar mini 50x50 pixels --&gt; <br>
+&lt;span class=&quot;logo-mini&quot;&gt;&lt;img src=&quot;dist/img/logo.png&quot; alt=&quot;Ovio&quot;&gt;&lt;/span&gt; <br>
+&lt;!-- logo for regular state and mobile devices --&gt; <br>
+&lt;span class=&quot;logo-lg&quot;&gt;&lt;img src=&quot;dist/img/logo-lg.png&quot; alt=&quot;Ovio&quot;&gt;&lt;/span&gt; &lt;/a&gt; <br>
+<br>
+&lt;!-- Header Navbar --&gt;<br>
+&lt;nav class=&quot;navbar navbar-static-top&quot; role=&quot;navigation&quot;&gt; <br>
+&lt;!-- Sidebar toggle button--&gt; <br>
+&lt;a href=&quot;#&quot; class=&quot;sidebar-toggle&quot; data-toggle=&quot;push-menu&quot; role=&quot;button&quot;&gt; &lt;span class=&quot;sr-only&quot;&gt;Toggle navigation&lt;/span&gt; &lt;/a&gt;<br>
+&lt;div class=&quot;pull-left search-box&quot;&gt;<br>
+&lt;form action=&quot;#&quot; method=&quot;get&quot; class=&quot;search-form&quot;&gt;<br>
+&lt;div class=&quot;input-group&quot;&gt;<br>
+&lt;input type=&quot;text&quot; name=&quot;search&quot; class=&quot;form-control&quot; placeholder=&quot;Search...&quot;&gt;<br>
+&lt;span class=&quot;input-group-btn&quot;&gt;<br>
+&lt;button type=&quot;submit&quot; name=&quot;search&quot; id=&quot;search-btn&quot; class=&quot;btn btn-flat&quot;&gt;&lt;i class=&quot;fa fa-search&quot;&gt;&lt;/i&gt; &lt;/button&gt;<br>
+&lt;/span&gt;&lt;/div&gt;<br>
+&lt;/form&gt;<br>
+<br>
+&lt;/li&gt;<br>
+&lt;/ul&gt;<br>
+&lt;/div&gt;<br>
+&lt;/nav&gt;<br>
+&lt;/header&gt;</p>
+
+<h3>SideBar Example</h3>
+<p>&lt;aside class=&quot;main-sidebar dark-bg&quot;&gt;<br>
+&lt;section class=&quot;sidebar&quot;&gt;<br>
+&lt;div class=&quot;user-panel black-bg&quot;&gt;<br>
+&lt;div class=&quot;pull-left image&quot;&gt; &lt;img src=&quot;dist/img/img1.jpg&quot; class=&quot;img-circle&quot; alt=&quot;User Image&quot;&gt; &lt;/div&gt;<br>
+&lt;div class=&quot;pull-left info&quot;&gt;<br>
+&lt;p&gt;Florence Douglas&lt;/p&gt;<br>
+&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-circle&quot;&gt;&lt;/i&gt; Online&lt;/a&gt; &lt;/div&gt;<br>
+&lt;/div&gt;<br>
+&lt;!-- Sidebar Menu --&gt;<br>
+&lt;ul class=&quot;sidebar-menu&quot; data-widget=&quot;tree&quot;&gt;<br>
+&lt;li class=&quot;header dark-bg&quot;&gt;Menu&lt;/li&gt;<br>
+&lt;li class=&quot;treeview active&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-dashboard&quot;&gt;&lt;/i&gt; &lt;span&gt;Dashboard&lt;/span&gt; &lt;span class=&quot;pull-right-container&quot;&gt; &lt;i class=&quot;fa fa-angle-left pull-right&quot;&gt;&lt;/i&gt; &lt;/span&gt; &lt;/a&gt;<br>
+&lt;ul class=&quot;treeview-menu &quot;&gt;<br>
+&lt;li class=&quot;active&quot;&gt;&lt;a href=&quot;index.html&quot;&gt;&lt;i class=&quot;fa fa-angle-right&quot;&gt;&lt;/i&gt; Dashboard 1&lt;/a&gt;&lt;/li&gt;<br>
+&lt;li&gt;&lt;a href=&quot;dashboard-2.html&quot;&gt;&lt;i class=&quot;fa fa-angle-right&quot;&gt;&lt;/i&gt; Dashboard 2&lt;/a&gt;&lt;/li&gt;<br>
+&lt;li&gt;&lt;a href=&quot;dashboard-3.html&quot;&gt;&lt;i class=&quot;fa fa-angle-right&quot;&gt;&lt;/i&gt; Dashboard 3&lt;/a&gt;&lt;/li&gt;<br>
+&lt;/ul&gt;<br>
+&lt;/li&gt;<br>
+&lt;li class=&quot;treeview&quot;&gt; &lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-desktop&quot;&gt;&lt;/i&gt; &lt;span&gt;Templates&lt;/span&gt; &lt;span class=&quot;pull-right-container&quot;&gt; &lt;i class=&quot;fa fa-angle-left pull-right&quot;&gt;&lt;/i&gt; &lt;/span&gt; &lt;/a&gt;<br>
+&lt;ul class=&quot;treeview-menu&quot;&gt;<br>
+&lt;li&gt;&lt;a href=&quot;index.html&quot;&gt;&lt;i class=&quot;fa fa-angle-right&quot;&gt;&lt;/i&gt; Default&lt;/a&gt;&lt;/li&gt;<br>
+&lt;li&gt;&lt;a href=&quot;index-light.html&quot;&gt;&lt;i class=&quot;fa fa-angle-right&quot;&gt;&lt;/i&gt; Light&lt;/a&gt;&lt;/li&gt;<br>
+&lt;li&gt;&lt;a href=&quot;index-dark.html&quot;&gt;&lt;i class=&quot;fa fa-angle-right&quot;&gt;&lt;/i&gt; Dark&lt;/a&gt;&lt;/li&gt;<br>
+&lt;li&gt;&lt;a href=&quot;index-collapsed-sidebar.html&quot;&gt;&lt;i class=&quot;fa fa-angle-right&quot;&gt;&lt;/i&gt; Collapsed Sidebar&lt;/a&gt;&lt;/li&gt;<br>
+&lt;li&gt;&lt;a href=&quot;index-boxed.html&quot;&gt;&lt;i class=&quot;fa fa-angle-right&quot;&gt;&lt;/i&gt; Boxed&lt;/a&gt;&lt;/li&gt;<br>
+&lt;li&gt;&lt;a href=&quot;index-top-nav.html&quot;&gt;&lt;i class=&quot;fa fa-angle-right&quot;&gt;&lt;/i&gt; Top Navigation&lt;/a&gt;&lt;/li&gt;<br>
+&lt;li&gt;&lt;a href=&quot;index-rtl.html&quot;&gt;&lt;i class=&quot;fa fa-angle-right&quot;&gt;&lt;/i&gt; RTL&lt;/a&gt;&lt;/li&gt;<br>
+&lt;/ul&gt;<br>
+&lt;/li&gt;<br>
+&lt;/ul&gt;<br>
+&lt;/li&gt;<br>
+&lt;/ul&gt;<br>
+&lt;!-- sidebar-menu --&gt; <br>
+&lt;/section&gt;<br>
+&lt;/aside&gt; </p>
+
+
+<h3>Footer Example</h3>
+<p>&lt;footer class=&quot;main-footer dark-bg&quot;&gt;<br>
+&lt;div class=&quot;pull-right hidden-xs&quot;&gt; Version 1.0&lt;/div&gt;<br>
+Copyright &amp;copy; 2017 Yourdomian. All rights reserved. &lt;/footer&gt;</p>
+<hr>
+        
+        <h3 id="browsersupport"><strong>D) Browser Support</strong> - <a href="#toc">top</a></h3>
+	  <p class="lead">Ovio supports the following browsers:</p>	
+        
+        <ul>
+          <li>IE9+</li>
+          <li>Firefox (latest)</li>
+          <li>Safari (latest)</li>
+          <li>Chrome (latest)</li>
+          <li>Opera (latest)</li>
+        </ul>
+        
+        <p><b>Note:</b> IE9 does not support transitions or animations. The template will function properly but it won't use animations/transitions on IE9.</p>
+		<hr>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+	  <h3 id="credits"><strong>F) Sources and Credits</strong> - <a href="#toc">top</a></h3>
+		
+		<p>You add new fonts by adding them to your Fonts folder in your computers Control Panel or right click font file and "Install".</p>
+		
+		<p>Resources used:
+		
+		
+		<ul>
+<li>Fonts: – Google Fonts (Websafe fonts used)<br>
+http://www.google.com/webfonts (you can find the fonts by the name of the font)
+</li>
+
+<li>Icons used:<br>
+http://fortawesome.github.io/Font-Awesome/icons/
+<br>
+http://graphicburger.com/simple-line-icons-webfont/
+</li>
+
+<li>Images Used: (heroturko.me, fotolia.com, http://unsplash.com, www.julianburford.nl and shutterstock.com) All are royalty free images.<br>
+You should replace the images with your own images.
+		</ul>
+		
+		
+		<hr>
+		
+		<p>If you have a more general question relating to the themes on ThemeForest, you might consider visiting the forums and asking your question in the "Item Discussion" section. </p>
+		<p>Once again, thank you so much for purchasing this template. As I said at the beginning, I'd be glad to help you if you have any questions relating to this template. No guarantees, but I'll do my best to assist.</p>
+	    <p>To keep in touch with my latest PSD and HTML templates make sure to check out <a href="http://themeforest.net/user/UXLiner">http://themeforest.net/user/UXLiner</a> frequently.
+	    
+		</p><p>Best regards,</p>
+
+	  <p class="append-bottom alt large"><strong>UXLiner</strong></p>
+	  <p><a href="#toc">Go To Table of Contents</a></p>
+		
+		<hr class="space">
+	</div><!-- end div .container -->
+
+</body>
+</html>

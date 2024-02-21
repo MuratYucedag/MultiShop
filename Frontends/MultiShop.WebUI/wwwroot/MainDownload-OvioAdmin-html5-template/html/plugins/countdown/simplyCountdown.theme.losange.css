@@ -1,0 +1,64 @@
+/**
+* Project : simply-countdown
+* File : simplyCountdown.theme.losange
+* Date : 27/06/2015
+* Author : Vincent Loy <vincent.loy1@gmail.com>
+*/
+.simply-countdown-losange {
+  overflow: visible;
+  display: table;
+  font-family: 'Roboto', sans-serif;
+  margin:auto;
+}
+.simply-countdown-losange > .simply-section {
+  width: 100px;
+  height: 100px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  float: left;
+  margin: 30px;
+  background: #fff;
+}
+.simply-countdown-losange > .simply-section > div {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+.simply-countdown-losange > .simply-section > div .simply-amount{
+  display: block;
+  color: #000;
+  font-weight: bold;
+  text-align: center;
+  font-size:20px;
+  font-weight:bold;
+}
+.simply-countdown-losange > .simply-section > div .simply-word {
+  display: block;
+  color: #000;
+  font-weight: bold;
+  text-align: center;
+  font-size:15px;
+}
+.input-group .form-control:first-child, .input-group-addon:first-child, .input-group-btn:first-child > .btn, .input-group-btn:first-child > .btn-group > .btn, .input-group-btn:first-child > .dropdown-toggle, .input-group-btn:last-child > .btn-group:not(:last-child) > .btn, .input-group-btn:last-child > .btn:not(:last-child):not(.dropdown-toggle){
+	height:40px;
+}

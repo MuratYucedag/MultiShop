@@ -1,0 +1,47 @@
+﻿@{
+    ViewData["Title"] = "ProductDetail";
+    Layout = "~/Views/UILayout/_UILayout.cshtml";
+}
+
+<div class="container-fluid">
+    <div class="row px-xl-5">
+        <div class="col-12">
+            <nav class="breadcrumb bg-light mb-30">
+                <a class="breadcrumb-item text-dark" href="#">Ana Sayfa</a>
+                <a class="breadcrumb-item text-dark" href="#">Ürün Listesi</a>
+                <span class="breadcrumb-item active">Ürün Detayları</span>
+            </nav>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid pb-5">
+    <div class="row px-xl-5">
+
+        @await Component.InvokeAsync("_ProductDetailImageSliderComponentPartial")
+
+        @await Component.InvokeAsync("_ProductDetailFeatureComponentPartial")
+
+    </div>
+    <div class="row px-xl-5">
+        <div class="col">
+            <div class="bg-light p-30">
+                <div class="nav nav-tabs mb-4">
+                    <a class="nav-item nav-link text-dark active" data-toggle="tab" href="#tab-pane-1">Ürün Detayı</a>
+                    <a class="nav-item nav-link text-dark" data-toggle="tab" href="#tab-pane-2">Ürün Bilgileri</a>
+                    <a class="nav-item nav-link text-dark" data-toggle="tab" href="#tab-pane-3">Yorumlar (1)</a>
+                </div>
+                <div class="tab-content">
+
+                    @await Component.InvokeAsync("_ProductDetailDescriptionComponentPartial")
+
+                    @await Component.InvokeAsync("_ProductDetailInformationComponentPartial")
+
+                    @await Component.InvokeAsync("_ProductDetailReviewComponentPartial")
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
