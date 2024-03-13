@@ -1,5 +1,4 @@
-﻿
-@{
+﻿@{
     ViewData["Title"] = "Index";
     Layout = "~/Views/UILayout/_UILayout.cshtml";
 }
@@ -20,8 +19,7 @@
     <div class="row px-xl-5">
         <div class="col-lg-3 col-md-4">
 
-            @await Component.InvokeAsync("_ProductListPriceFilterComponentPartial")          
-
+            @await Component.InvokeAsync("_ProductListPriceFilterComponentPartial")
             @await Component.InvokeAsync("_ProductListColorFilterComponentPartial")
 
             @await Component.InvokeAsync("_ProductListSizeFilterComponentPartial")
@@ -33,10 +31,10 @@
 
                 @await Component.InvokeAsync("_ProductListGetProductCountComponentPartial")
 
-                @await Component.InvokeAsync("_ProductListComponentPartial")
+                @await Component.InvokeAsync("_ProductListComponentPartial",new {id=ViewBag.i})
 
                 @await Component.InvokeAsync("_ProductListPaginationComponentPartial")
-               
+
             </div>
         </div>
     </div>

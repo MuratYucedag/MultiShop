@@ -1,0 +1,43 @@
+﻿@model UpdateCommentDto
+
+@{
+    ViewData["Title"] = "UpdateComment";
+    Layout = "~/Areas/Admin/Views/AdminLayout/Index.cshtml";
+}
+
+<section class="content container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="chart-box">
+                <h4>Kategori Güncelleme Sayfası</h4>
+                <br />
+                <div class="bs-example" data-example-id="bordered-table">
+                    <form method="post">
+                        <input type="hidden" asp-for="UserCommentId" />
+                        <input type="text" asp-for="ProductId" />
+                        <label>Kullanıcı Adı Soyadı</label>
+                        <input type="text" class="form-control" asp-for="NameSurname" />
+                        <br />
+                        <label>Kullanıcı Görsel</label>
+                        <input type="text" class="form-control" asp-for="ImageUrl" />
+                        <br />
+                        <label>Email Adresi</label>
+                        <input type="text" class="form-control" asp-for="Email" />
+                        <br />
+                        <label>Kullanıcı Puanı</label>
+                        <input type="number" class="form-control" asp-for="Rating" />
+                        <br />
+                        <label>Yorum Tarihi</label>
+                        <input type="date" class="form-control" asp-for="CreatedDate" />
+                        <br />
+                        <label>Yorum</label>
+                        <textarea asp-for="CommentDetail" class="form-control" rows="3"></textarea>
+                        <br />
+                        <button class="btn btn-success">Yorumu Güncelle</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
