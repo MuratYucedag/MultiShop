@@ -50,42 +50,12 @@
                                 <i class="fas fa-star"></i>
                             </div>
                         }
-                        <p>@item.CommentDetail.</p>
+                        <p>@item.CommentDetail</p>
                     </div>
                 </div>
             }
             
         </div>
-        <div class="col-md-6">
-            <h4 class="mb-4">Bir Yorum Bırakın</h4>
-            <small>Yorumunuzun alınması için geçerli bir email adresi giriniz.*</small>
-            <div class="d-flex my-3">
-                <p class="mb-0 mr-2">Ürün puanınız * :</p>
-                <div class="text-primary">
-                    <i class="far fa-star"></i>
-                    <i class="far fa-star"></i>
-                    <i class="far fa-star"></i>
-                    <i class="far fa-star"></i>
-                    <i class="far fa-star"></i>
-                </div>
-            </div>
-            <form>
-                <div class="form-group">
-                    <label for="message">Yorumunuz *</label>
-                    <textarea id="message" cols="30" rows="5" class="form-control"></textarea>
-                </div>
-                <div class="form-group">
-                    <label for="name">Adınız soyadınız *</label>
-                    <input type="text" class="form-control" id="name">
-                </div>
-                <div class="form-group">
-                    <label for="email">Email adresiniz *</label>
-                    <input type="email" class="form-control" id="email">
-                </div>
-                <div class="form-group mb-0">
-                    <input type="submit" value="Yorum Yap" class="btn btn-primary px-3">
-                </div>
-            </form>
-        </div>
+        @await Html.PartialAsync("~/Views/ProductList/AddComment.cshtml",new {id=ViewBag.x})
     </div>
 </div>
