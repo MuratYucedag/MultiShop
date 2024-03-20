@@ -37,6 +37,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Requirements", "Requirement
 	ProjectSection(SolutionItems) = preProject
 		FontAwesomeLink.txt = FontAwesomeLink.txt
 		IdentityServerVersionErrorSolution.txt = IdentityServerVersionErrorSolution.txt
+		OcelotLink.txt = OcelotLink.txt
 		PortainerCmd.txt = PortainerCmd.txt
 		PortNumbers.txt = PortNumbers.txt
 		SimpleCode.txt = SimpleCode.txt
@@ -68,6 +69,20 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Comment", "Comment", "{902ADAE2-120E-4249-9D03-16202ABADAED}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MultiShop.Comment", "Services\Comment\MultiShop.Comment\MultiShop.Comment.csproj", "{1FD7BFC4-5217-4F77-9DBC-6EE87B6493AC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ApiGateway", "ApiGateway", "{E76DC780-2C8E-47A7-BAB1-464131E00FD7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "RapidApi", "RapidApi", "{E42C2847-7E71-40A3-AE72-EC6314AA90ED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultiShop.OcelotGateway", "ApiGateway\MultiShop.OcelotGateway\MultiShop.OcelotGateway.csproj", "{6E53D962-6192-4E1A-B836-ACCD55431EEB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Payment", "Payment", "{1E9F520A-299A-4746-9AD0-636F91E4E7F2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultiShop.Payment", "Services\Payment\MultiShop.Payment\MultiShop.Payment.csproj", "{F8F734AC-122F-4382-BEA1-3AA0F023485C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Images", "Images", "{D60E284B-DC53-4576-8F42-1E6F8E9CB812}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultiShop.Images", "Services\Images\MultiShop.Images\MultiShop.Images.csproj", "{57785371-7F2C-4AB9-A095-06960A08B1C5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -139,6 +154,18 @@ Global
 		{1FD7BFC4-5217-4F77-9DBC-6EE87B6493AC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1FD7BFC4-5217-4F77-9DBC-6EE87B6493AC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1FD7BFC4-5217-4F77-9DBC-6EE87B6493AC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E53D962-6192-4E1A-B836-ACCD55431EEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E53D962-6192-4E1A-B836-ACCD55431EEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E53D962-6192-4E1A-B836-ACCD55431EEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E53D962-6192-4E1A-B836-ACCD55431EEB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F8F734AC-122F-4382-BEA1-3AA0F023485C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8F734AC-122F-4382-BEA1-3AA0F023485C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8F734AC-122F-4382-BEA1-3AA0F023485C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8F734AC-122F-4382-BEA1-3AA0F023485C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{57785371-7F2C-4AB9-A095-06960A08B1C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57785371-7F2C-4AB9-A095-06960A08B1C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57785371-7F2C-4AB9-A095-06960A08B1C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57785371-7F2C-4AB9-A095-06960A08B1C5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -169,6 +196,11 @@ Global
 		{F0363D20-D1AA-4820-BB5D-93B53D66B50E} = {DCF7A031-822A-4F2B-85C7-8430890FF7D9}
 		{902ADAE2-120E-4249-9D03-16202ABADAED} = {A0370056-D424-404E-B90D-145BFC51BFE8}
 		{1FD7BFC4-5217-4F77-9DBC-6EE87B6493AC} = {902ADAE2-120E-4249-9D03-16202ABADAED}
+		{6E53D962-6192-4E1A-B836-ACCD55431EEB} = {E76DC780-2C8E-47A7-BAB1-464131E00FD7}
+		{1E9F520A-299A-4746-9AD0-636F91E4E7F2} = {A0370056-D424-404E-B90D-145BFC51BFE8}
+		{F8F734AC-122F-4382-BEA1-3AA0F023485C} = {1E9F520A-299A-4746-9AD0-636F91E4E7F2}
+		{D60E284B-DC53-4576-8F42-1E6F8E9CB812} = {A0370056-D424-404E-B90D-145BFC51BFE8}
+		{57785371-7F2C-4AB9-A095-06960A08B1C5} = {D60E284B-DC53-4576-8F42-1E6F8E9CB812}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {46A97610-15A8-467A-BAB7-5FA7388A56C1}
