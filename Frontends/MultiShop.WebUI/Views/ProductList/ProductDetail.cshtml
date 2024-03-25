@@ -3,18 +3,6 @@
     Layout = "~/Views/UILayout/_UILayout.cshtml";
 }
 
-<div class="container-fluid">
-    <div class="row px-xl-5">
-        <div class="col-12">
-            <nav class="breadcrumb bg-light mb-30">
-                <a class="breadcrumb-item text-dark" href="#">Ana Sayfa</a>
-                <a class="breadcrumb-item text-dark" href="#">Ürün Listesi</a>
-                <span class="breadcrumb-item active">Ürün Detayları</span>
-            </nav>
-        </div>
-    </div>
-</div>
-
 <div class="container-fluid pb-5">
     <div class="row px-xl-5">
 
@@ -37,9 +25,9 @@
 
                     @await Component.InvokeAsync("_ProductDetailInformationComponentPartial",new {id=ViewBag.x})
 
-                    @await Component.InvokeAsync("_ProductDetailReviewComponentPartial",new {id=ViewBag.x})
+                 @*    @await Component.InvokeAsync("_ProductDetailReviewComponentPartial",new {id=ViewBag.x}) *@
 
-                    @*     @await Html.PartialAsync("~/Views/ProductList/AddComment.cshtml",new {id=ViewBag.x})  *@
+                    @*   Kapalı  @await Html.PartialAsync("~/Views/ProductList/AddComment.cshtml",new {id=ViewBag.x})  *@
 
                 </div>
             </div>
