@@ -15,7 +15,7 @@
             @foreach(var item in Model)
             {
                 <tr>
-                    <td class="align-middle"><img src="#" alt="" style="width: 50px; height:60px;"> @item.ProductName</td>
+                    <td class="align-middle"><img src="@item.ProductImageUrl" alt="" style="width: 50px; height:60px;"> @item.ProductName</td>
                     <td class="align-middle">@item.Price ₺</td>
                     <td class="align-middle">
                         <div class="input-group quantity mx-auto" style="width: 100px;">
@@ -33,7 +33,7 @@
                         </div>
                     </td>
                     <td class="align-middle">@item.Price ₺</td>
-                    <td class="align-middle"><button class="btn btn-sm btn-danger"><i class="fa fa-times"></i></button></td>
+                    <td class="align-middle"><a href="/ShoppingCart/RemoveBasketItem/@item.ProductId" class="btn btn-sm btn-danger"><i class="fa fa-times"></i></a></td>
                 </tr>
             }
             
