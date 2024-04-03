@@ -1,9 +1,9 @@
 ﻿<div class="col-lg-4">
     <form class="mb-30" asp-controller="Discount" asp-action="ConfirmDiscountCoupon" method="post">
         <div class="input-group">
-            <input type="text" class="form-control border-0 p-4" placeholder="Kupon Kodunuz">
+            <input type="text" name="code" class="form-control border-0 p-4" placeholder="Kupon Kodunuz">
             <div class="input-group-append">
-                <button class="btn btn-primary">Kuponyu Uygula</button>
+                <button class="btn btn-primary">Kuponu Uygula</button>
             </div>
         </div>
     </form>
@@ -12,17 +12,17 @@
         <div class="border-bottom pb-2">
             <div class="d-flex justify-content-between mb-3">
                 <h6>Toplam Ürün Fiyatı</h6>
-                <h6>2200.00 ₺</h6>
+                <h6>@ViewBag.total ₺</h6>
             </div>
             <div class="d-flex justify-content-between">
-                <h6 class="font-weight-medium">Kdv</h6>
-                <h6 class="font-weight-medium">220.00 ₺</h6>
+                <h6 class="font-weight-medium">Kdv Tutarı</h6>
+                <h6 class="font-weight-medium">@ViewBag.tax ₺</h6>
             </div>
         </div>
         <div class="pt-2">
             <div class="d-flex justify-content-between mt-2">
                 <h5>Toplam</h5>
-                <h5>2420.00 ₺</h5>
+                <h5>@ViewBag.totalPriceWithTax ₺</h5>
             </div>
             <button class="btn btn-block btn-primary font-weight-bold my-3 py-3">Ödeme Adımına Geç</button>
         </div>
