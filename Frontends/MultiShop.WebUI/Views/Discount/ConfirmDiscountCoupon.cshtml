@@ -1,30 +1,40 @@
 ﻿<div class="col-lg-4">
     <form class="mb-30" asp-controller="Discount" asp-action="ConfirmDiscountCoupon" method="post">
         <div class="input-group">
-            <input type="text" name="code" class="form-control border-0 p-4" placeholder="Kupon Kodunuz">
+            <input type="text" name="code" value="@ViewBag.code" class="form-control border-0 p-4" placeholder="Kupon Kodunuz">
             <div class="input-group-append">
                 <button class="btn btn-primary">Kuponu Uygula</button>
+                <br />
+                <h3></h3>
             </div>
         </div>
     </form>
     <h5 class="section-title position-relative text-uppercase mb-3"><span class="bg-secondary pr-3">Sipariş Özeti</span></h5>
     <div class="bg-light p-30 mb-5">
         <div class="border-bottom pb-2">
-            <div class="d-flex justify-content-between mb-3">
+            <div class="d-flex justify-content-between mb-1">
                 <h6>Toplam Ürün Fiyatı</h6>
                 <h6>@ViewBag.total ₺</h6>
             </div>
-            <div class="d-flex justify-content-between">
+            <div class="d-flex justify-content-between mb-1">
                 <h6 class="font-weight-medium">Kdv Tutarı</h6>
                 <h6 class="font-weight-medium">@ViewBag.tax ₺</h6>
+            </div>
+            <div class="d-flex justify-content-between mb-1">
+                <h6 class="font-weight-medium">İndirim Oranı</h6>
+                <h6 class="font-weight-medium">% @ViewBag.discountRate</h6>
+            </div>
+            <div class="d-flex justify-content-between mb-1">
+                <h6 class="font-weight-medium">İndirimsiz Tutar</h6>
+                <h6 class="font-weight-medium">@ViewBag.totalPriceWithTax ₺</h6>
             </div>
         </div>
         <div class="pt-2">
             <div class="d-flex justify-content-between mt-2">
-                <h5>Toplam</h5>
-                <h5>@ViewBag.totalPriceWithTax ₺</h5>
+                <h5>İndirimli Güncel Tutar</h5>
+                <h5>@ViewBag.totalNewPriceWithDiscount ₺</h5>
             </div>
             <button class="btn btn-block btn-primary font-weight-bold my-3 py-3">Ödeme Adımına Geç</button>
-        </div>
+        </div> 
     </div>
 </div>

@@ -1,0 +1,115 @@
+﻿BasketList
+
+@model List<BasketItemDto>
+
+<div class="bg-light p-30 mb-5">
+    <div class="border-bottom">
+        <h6 class="mb-3">Sipariş Listesi</h6>
+        @foreach(var item in Model)
+        {
+            <div class="d-flex justify-content-between">
+                <p>@item.ProductName (@item.Quantity)</p>
+                <h6>@item.Price</h6>
+            </div>
+        }        
+    </div>
+    <div class="border-bottom pt-3 pb-2">
+        <div class="d-flex justify-content-between mb-3">
+            <h6>Alışveriş Tutarı</h6>
+            <h6>100 ₺</h6>
+        </div>
+        <div class="d-flex justify-content-between">
+            <h6 class="font-weight-medium">Kargo Ücreti</h6>
+            <h6 class="font-weight-medium">10 ₺</h6>
+        </div>
+    </div>
+    <div class="pt-2">
+        <div class="d-flex justify-content-between mt-2">
+            <h5>Genel Toplam</h5>
+            <h5>110 ₺</h5>
+        </div>
+    </div>
+</div>
+
+---------------------
+
+Form
+
+<div class="col-lg-8">
+                <h5 class="section-title position-relative text-uppercase mb-3"><span class="bg-secondary pr-3">Sipariş Teslimat ve Fatura Adresiniz</span></h5>
+                <div class="bg-light p-30 mb-5">
+                    <div class="row">
+                        <div class="col-md-6 form-group">
+                            <label>Adınız</label>
+                            <input class="form-control" type="text" asp-for="Name" placeholder="adınız">
+                        </div>
+                        <div class="col-md-6 form-group">
+                            <label>Soyadınız</label>
+                            <input class="form-control" type="text" asp-for="Surname" placeholder="soyadınız">
+                        </div>
+                        <div class="col-md-6 form-group">
+                            <label>E-mail Adresiniz</label>
+                            <input class="form-control" type="text" asp-for="Email" placeholder="mail@email.com">
+                        </div>
+                        <div class="col-md-6 form-group">
+                            <label>Telefon Numaranız</label>
+                            <input class="form-control" type="text" asp-for="Phone" placeholder="+90 123 456 78 90">
+                        </div>
+                        <div class="col-md-6 form-group">
+                            <label>Address Satır 1</label>
+                            <input class="form-control" type="text" asp-for="Detail1" placeholder="123 mahallesi">
+                        </div>
+                        <div class="col-md-6 form-group">
+                            <label>Address Satır 2</label>
+                            <input class="form-control" type="text" asp-for="Detail2" placeholder="123 sokak">
+                        </div>
+                        <div class="col-md-6 form-group">
+                            <label>Ülke</label>
+                            <input class="form-control" type="text" asp-for="Country" placeholder="Türkiye">
+                        </div>
+                        <div class="col-md-6 form-group">
+                            <label>Şehir</label>
+                            <input class="form-control" type="text" asp-for="City" placeholder="şehriniz">
+                        </div>
+                        <div class="col-md-6 form-group">
+                            <label>İlçe</label>
+                            <input class="form-control" type="text" asp-for="District" placeholder="New York">
+                        </div>
+                        <div class="col-md-6 form-group">
+                            <label>Posta Kodu</label>
+                            <input class="form-control" type="text" asp-for="ZipCode" placeholder="12345">
+                        </div>                         
+                    </div>
+                </div>
+
+            </div>
+
+            -----------------
+
+
+            Ödeme Yöntemi
+
+            <div class="mb-5">
+                    <h5 class="section-title position-relative text-uppercase mb-3"><span class="bg-secondary pr-3">Ödeme Yöntemini Seçin</span></h5>
+                    <div class="bg-light p-30">
+                        <div class="form-group">
+                            <div class="custom-control custom-radio">
+                                <input type="radio" class="custom-control-input" name="payment" id="paypal">
+                                <label class="custom-control-label" for="paypal">Paypal</label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="custom-control custom-radio">
+                                <input type="radio" class="custom-control-input" name="payment" id="directcheck">
+                                <label class="custom-control-label" for="directcheck">Direct Check</label>
+                            </div>
+                        </div>
+                        <div class="form-group mb-4">
+                            <div class="custom-control custom-radio">
+                                <input type="radio" class="custom-control-input" name="payment" id="banktransfer">
+                                <label class="custom-control-label" for="banktransfer">Bank Transfer</label>
+                            </div>
+                        </div>
+                        <button class="btn btn-block btn-primary font-weight-bold py-3">Ödeme Adımına Geç</button>
+                    </div>
+                </div>

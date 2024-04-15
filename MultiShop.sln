@@ -40,6 +40,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Requirements", "Requirement
 		LoginIndex.txt = LoginIndex.txt
 		OcelotCodeExample.txt = OcelotCodeExample.txt
 		OcelotLink.txt = OcelotLink.txt
+		OrderHtml.txt = OrderHtml.txt
 		PortainerCmd.txt = PortainerCmd.txt
 		PortNumbers.txt = PortNumbers.txt
 		SimpleCode.txt = SimpleCode.txt
