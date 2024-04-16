@@ -1,0 +1,69 @@
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/UILayout/_UILayout.cshtml";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kredi Kartý Bilgileri</title>
+    <style>
+        #card {
+            width: 300px;
+            height: 200px;
+            background-color: lightgray;
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <label for="cardNumber">Kart Numarasý:</label>
+    <br />
+    <input type="text" id="cardNumber" name="cardNumber" maxlength="16" required />
+    <br />
+    <label for="cardName">Ad Soyad:</label>
+    <br />
+    <input type="text" id="cardName" name="cardName" required />
+    <br />
+    <label for="expiryDate">Son Kullanma Tarihi:</label>
+    <br />
+    <input type="text" id="expiryDate" name="expiryDate" placeholder="MM/YYYY" maxlength="7" required />
+    <br />
+    <div id="card"></div>
+
+    <script>
+        document.getElementById('cardNumber').addEventListener('input', updateCardInfo);
+        document.getElementById('cardName').addEventListener('input', updateCardInfo);
+        document.getElementById('expiryDate').addEventListener('input', updateCardInfo);
+
+        function updateCardInfo() {
+            var cardNumber = document.getElementById('cardNumber').value.replace(/\D/g, '');
+            var cardName = document.getElementById('cardName').value;
+            var expiryDate = document.getElementById('expiryDate').value;
+
+            var cardDiv = document.getElementById('card');
+            var cardInfo = "";
+
+            // Kart numarasýný 4'ün katlarýna ayýr
+            var cardGroups = cardNumber.match(/.{1,4}/g);
+            cardInfo += cardGroups.join(' ') + "<br/>";
+
+            // Ad soyadý ekle
+            cardInfo += cardName + "<br/>";
+
+            // Son kullanma tarihini ekle
+            cardInfo += "Son Kullanma Tarihi: " + expiryDate;
+
+            cardDiv.innerHTML = cardInfo;
+        }
+    </script>
+</body>
+</html>
+
+
+
+-------------------------
+
