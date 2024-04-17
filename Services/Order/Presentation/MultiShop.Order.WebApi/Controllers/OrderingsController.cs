@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using MultiShop.Order.Application.Features.Mediator.Commands.OrderingCommands;
 using MultiShop.Order.Application.Features.Mediator.Queries.OrderingQueries;
+using System.Security;
 
 namespace MultiShop.Order.WebApi.Controllers
 {
@@ -51,6 +52,13 @@ namespace MultiShop.Order.WebApi.Controllers
         {
             await _mediator.Send(command);
             return Ok("Sipariş başarıyla güncellendi");
+        }
+
+        [HttpGet("GetOrderingByUserId/{id}")]
+        public async Task<IActionResult> GetOrderingByUserId(string id)
+        {
+            var values = await _mediator.Send(new GetOrderingByUserIdQuery(id));
+            return Ok(values);
         }
     }
 }
