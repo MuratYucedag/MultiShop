@@ -21,6 +21,7 @@ namespace MultiShop.IdentityServer
            new ApiResource("ResourcePayment"){Scopes={ "PaymentFullPermission" } },
            new ApiResource("ResourceImage"){Scopes={ "ImageFullPermission" } },
            new ApiResource("ResourceOcelot"){Scopes={"OcelotFullPermission"} },
+           new ApiResource("ResourceMessage"){Scopes={"MessageFullPermission"} },
            new ApiResource(IdentityServerConstants.LocalApi.ScopeName)
         };
 
@@ -43,6 +44,7 @@ namespace MultiShop.IdentityServer
             new ApiScope("PaymentFullPermission","Full authority for payment operations"),
             new ApiScope("ImageFullPermission","Full authority for image operations"),
             new ApiScope("OcelotFullPermission","Full authority for ocelot operations"),
+            new ApiScope("MessageFullPermission","Full authority for message operations"),
             new ApiScope(IdentityServerConstants.LocalApi.ScopeName)
         };
 
@@ -66,7 +68,7 @@ namespace MultiShop.IdentityServer
                 ClientName="Multi Shop Manager User",
                 AllowedGrantTypes=GrantTypes.ResourceOwnerPassword,
                 ClientSecrets={new Secret("multishopsecret".Sha256()) },
-                AllowedScopes={ "CatalogReadPermission", "CatalogFullPermission", "BasketFullPermission", "OcelotFullPermission", "CommentFullPermission", "PaymentFullPermission", "ImageFullPermission","DiscountFullPermission","OrderFullPermisson",
+                AllowedScopes={ "CatalogReadPermission", "CatalogFullPermission", "BasketFullPermission", "OcelotFullPermission", "CommentFullPermission", "PaymentFullPermission", "ImageFullPermission","DiscountFullPermission","OrderFullPermisson","MessageFullPermission",
                 IdentityServerConstants.LocalApi.ScopeName,
                 IdentityServerConstants.StandardScopes.Email,
                 IdentityServerConstants.StandardScopes.OpenId,
