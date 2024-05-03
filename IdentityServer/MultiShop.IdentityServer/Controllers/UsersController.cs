@@ -2,7 +2,9 @@
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using MultiShop.IdentityServer.Models;
+using System.Collections.Generic;
 using System.IdentityModel.Tokens.Jwt;
 using System.Linq;
 using System.Threading.Tasks;
@@ -35,6 +37,13 @@ namespace MultiShop.IdentityServer.Controllers
                 Email = user.Email,
                 UserName = user.UserName
             });
+        }
+
+        [HttpGet("GetAllUserList")]
+        public async Task<IActionResult> GetAllUserList()
+        {
+            var users = await _userManager.Users.ToListAsync();
+            return Ok(users);
         }
     }
 }
