@@ -18,6 +18,7 @@
                                 <th>Ad Soyad</th>
                                 <th>Kullanıcı Adı</th>
                                 <th>Email</th>
+                                <th>Adres Detayı</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -28,7 +29,8 @@
                                     <th scope="row">@count</th>
                                     <td>@item.name</td>
                                     <td>@item.userName</td>
-                                    <td>@item.email</td>            
+                                    <td>@item.email</td>     
+                                    <td><a href="/Admin/User/UserAddressInfo/@item.id" class="btn btn-warning">Adres Detayı</a></td>
                                 </tr>
                             }
                         </tbody>
