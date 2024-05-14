@@ -2,9 +2,11 @@
 {
     public interface IStatisticService
     {
-        int GetCategoryCount();
-        int GetProductCount();
-        long GetBrandCount();
-        decimal GetProductAvgPrice();
+        Task<long> GetCategoryCount();
+        Task<long> GetProductCount();
+        Task<long> GetBrandCount();
+        Task<decimal> GetProductAvgPrice();
+        Task<string> GetMaxPriceProductName();
+        Task<string> GetMinPriceProductName();
     }
 }
