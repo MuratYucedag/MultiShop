@@ -1,5 +1,5 @@
-User-->1
 Catalog-->6
+User-->1
 Comment-->3
 Discount-->1
 

@@ -94,6 +94,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Message", "Message", "{A8D4
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MultiShop.Message", "Services\Message\MultiShop.Message\MultiShop.Message.csproj", "{5278C84B-9DF0-4111-8830-325D4E4BBF44}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SignalRRealTime", "SignalRRealTime", "{7455040B-ACCD-4DC7-97A1-72CB3FAE1D27}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultiShop.SignalRRealTimeApi", "Services\SignalRRealTime\MultiShop.SignalRRealTimeApi\MultiShop.SignalRRealTimeApi.csproj", "{6441E34E-79F3-4B5C-AF19-86D0DF381D98}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -180,6 +184,10 @@ Global
 		{5278C84B-9DF0-4111-8830-325D4E4BBF44}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5278C84B-9DF0-4111-8830-325D4E4BBF44}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5278C84B-9DF0-4111-8830-325D4E4BBF44}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6441E34E-79F3-4B5C-AF19-86D0DF381D98}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6441E34E-79F3-4B5C-AF19-86D0DF381D98}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6441E34E-79F3-4B5C-AF19-86D0DF381D98}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6441E34E-79F3-4B5C-AF19-86D0DF381D98}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -217,6 +225,8 @@ Global
 		{57785371-7F2C-4AB9-A095-06960A08B1C5} = {D60E284B-DC53-4576-8F42-1E6F8E9CB812}
 		{A8D4F500-0CDB-4479-95DB-19458DD3D156} = {A0370056-D424-404E-B90D-145BFC51BFE8}
 		{5278C84B-9DF0-4111-8830-325D4E4BBF44} = {A8D4F500-0CDB-4479-95DB-19458DD3D156}
+		{7455040B-ACCD-4DC7-97A1-72CB3FAE1D27} = {A0370056-D424-404E-B90D-145BFC51BFE8}
+		{6441E34E-79F3-4B5C-AF19-86D0DF381D98} = {7455040B-ACCD-4DC7-97A1-72CB3FAE1D27}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {46A97610-15A8-467A-BAB7-5FA7388A56C1}
